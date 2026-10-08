@@ -40,7 +40,13 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
     target_compile_options(loris PRIVATE -include "${CMAKE_CURRENT_SOURCE_DIR}/source/Helpers/LorisStdCompat.h")
 endif()
 
-add_subdirectory(libs/clap-juce-extensions EXCLUDE_FROM_ALL)
+# CLAP wrapper (pinned development revision).
+FetchContent_Declare(
+    clap_juce_extensions
+    GIT_REPOSITORY https://github.com/free-audio/clap-juce-extensions.git
+    GIT_TAG        c1a5ad0
+)
+FetchContent_MakeAvailable(clap_juce_extensions)
 
 option(BOREAL_COPY_AFTER_BUILD "Copy built plugins into the system plugin folders" ON)
 

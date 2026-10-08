@@ -41,14 +41,12 @@ Formats: **VST3**, **AU** (macOS), **CLAP** + **Standalone** (JUCE 9, CMake).
 Requirements: CMake ≥ 3.22 and a C++17 compiler. JUCE 9.0.1 is fetched
 automatically via CMake's FetchContent, the Loris fork
 (`madrona-labs/loris`) likewise, and the CLAP wrapper
-(`clap-juce-extensions`) is included as a git submodule.
+(`clap-juce-extensions`), likewise.
 
-1. Check out the repository with submodules:
+1. Check out the repository:
 
    ```sh
-   git clone --recurse-submodules <url>
-   # or, if already cloned:
-   git submodule update --init --recursive
+   git clone <url>
    ```
 
 2. Configure and build:
