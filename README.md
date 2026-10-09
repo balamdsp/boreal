@@ -19,8 +19,8 @@ Formats: **VST3**, **AU** (macOS), **CLAP** + **Standalone** (JUCE 9, CMake).
   follow their own morph position, plus a **Cross mode** (pitch from one
   corner, loudness from another) and per-slot **formant shift**.
 - **Independent per-slot playheads** — rate, offset, loop window, direction
-  and loop/one-shot per corner, on wall-clock timebases so repetitions drift
-  async; reverse playback and ping-pong supported.
+  and loop/one-shot per corner, repetitions drift async; reverse playback 
+  and ping-pong supported.
 - **Transpose / fine tune**, glide, legato, pitch bend and 1–8 voices.
 
 ### Transient layer
